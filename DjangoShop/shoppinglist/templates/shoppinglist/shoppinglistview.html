@@ -1,0 +1,14 @@
+{% extends 'shoppinglist/base.html'%}
+{% block title %}
+{{name}}
+{% endblock %}
+
+
+{% block content %}
+<h1>{{name}}</h1>
+<ul>
+  {% for i in slist %}
+    <li>{{ i.item_name }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
